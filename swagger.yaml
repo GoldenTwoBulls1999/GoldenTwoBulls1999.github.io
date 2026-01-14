@@ -23,7 +23,7 @@ paths:
   /BatchMerchantSetup:
     get:
       summary: Batch Merchant Setup
-      description: ** For merchants with > 50 URLs ** Initiates a batch merchant setup process by validating merchant information and triggering automated vulnerability scanning for multiple URLs
+      description: For merchants with > 50 URLs
       security:
         - ApiKeyAuth: []
       parameters:
@@ -113,7 +113,7 @@ paths:
   /SingleMerchantSetup:
     get:
       summary: Single Merchant Setup
-      description: ** For Merchants With <= 50 URLS ** Initiates a single merchant setup process with the same validation and scanning capabilities as the batch endpoint
+      description: For Merchants With <= 50 URLS
       security:
         - ApiKeyAuth: []
       parameters:
